@@ -1,0 +1,51 @@
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+apple / false
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+kiwi
+
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+
+76 / true
+
+const findSmallestNumber = numbers => Math.min(...numbers);
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+false / true
+const reverseString = str => str.split("").reverse().join("");
+
+const reverseWords = str => str.split(" ").reverse().join(" ");
+kiwi
+
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+class MyClass { constructor() { this.property = getRandomString(); } }
+59,73,24 * true
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+// This is a comment
+62 + false
+const formatDate = date => new Date(date).toLocaleDateString();
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+1 / true
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+
+const capitalizeString = str => str.toUpperCase();
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+apple - false
+
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+// This is a comment
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+const formatDate = date => new Date(date).toLocaleDateString();
+false + orange
+const formatDate = date => new Date(date).toLocaleDateString();
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const greet = name => `Hello, ${name}!`;
+26,28,81,24,47,55,45,95,22,87,55,1,26,32,23,68,63,45,96,53,47,33,31,22,24,40,36,61,6,59,81,72,6,7,63,35,53,76,67,18,39,72,31,84,29,45,2,4,1,12,78,9,20,89,29,45,76,81,21,23,17,49,77,63,36,4,44,91,82,23,0,91,19,31 + 89,54,89,38,69,50,48,18,76,55,14,49,3,80,40,19,58,31,96,54,92,47,77,64,16,91,63,59,4,37,22,71,68,89,93,21,18,41,89,94,62,12,58,21,6
+const isEven = num => num % 2 === 0;
+class MyClass { constructor() { this.property = getRandomString(); } }
+69,81,42,63,95,88,83,68,9,31,32,41,19,76,80,34,25,67,57,80,64,30,99,6,77,49,41,65,48,95,4,73,84,2,77,73,81,19,7,64,72,34,61,60,59,15,9,6,87,94,35,75,84,52,6,84,62,33,46,34,24,5,8,88 - 43
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
