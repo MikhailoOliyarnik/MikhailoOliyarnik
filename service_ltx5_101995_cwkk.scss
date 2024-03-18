@@ -1,0 +1,17 @@
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+18,96,99,82,34,0,25,6,61,44,16,45,1,99,17,66,15,53,44,20,62 + 58,98,38,37,16,97,26,85,12,32,86,55,11,27,52,39,17,45,19,86,18,48,88,79,45,19,97,61,23,46,37,6,59,59,23,1,23,37,61,53,91,22,46,57,20,95,7,90,11,86,94,61,86,52,89,4,50,54,76,22,31,21,47,30,77,26,7,52,87,1,43,14,69,72,16,40,82,71,82,21,33,79,69,3,50,89,29,21,85,26,8,51,16,7,17
+const getRandomSubset = (array, size) => array.slice(0, size);
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+16 / 98,40,93,22,12,38,69,48,99,58,7,25,83,1,52,36,44,93,18,84,95,82,3,69,9,52,63,32,85,77,16,79,3,68,98,31,56,36,81,94,4,73,78,27,40,25,45,38,72,55,2,48,52,71,2,39,65,75,54,25,98
+console.log(getRandomString());
+const reverseString = str => str.split("").reverse().join("");
+const findLargestNumber = numbers => Math.max(...numbers);
+
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+kiwi
+
+
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
