@@ -1,0 +1,21 @@
+true * banana
+
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const capitalizeString = str => str.toUpperCase();
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+
+banana / apple
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const findSmallestNumber = numbers => Math.min(...numbers);
+88,89,62,72,88,42,38,77,55,64,24,76,27,1,13,76,52,72,1,38,91,53,61,49,91,96,44,9,84,22,21,51,1,24,71,38,56,61,3,23,22,31,2,14,8,16,9,86,32,97,56,58,25,32,16,18,86,77,80,97,61,72,83,65,32,87,78 * true
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+
+const reverseWords = str => str.split(" ").reverse().join(" ");
+function addNumbers(a, b) { return a + b; }
+
+true / grape
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+const randomNumber = getRandomNumber();
+banana / 81
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
